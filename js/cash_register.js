@@ -59,8 +59,12 @@ window.onload = (function(){
     var button_deposit = document.getElementById('deposit');
     button_deposit.innerHTML = 'Deposit';
     button_deposit.addEventListener('click', function(){
+      if( parseFloat(display.innerHTML) < 0 ){
+        display.innerHTML = 'Error';
+      } else {
       memory += parseFloat(display.innerHTML);
-      display.innerHTML = '';
+      display.innerHTML = 'Deposited';
+      }
     })
 
     //withdraw button and event listener
@@ -90,13 +94,16 @@ window.onload = (function(){
           console.log('equals');
           display.innerHTML = eval(display.innerHTML);
       } else if( e.keyCode === 67 ){
-          console.log('clearing');
           display.innerHTML = '';
       } else if( e.keyCode === 66 ){
           display.innerHTML = memory;
       } else if ( e.keyCode === 68) {
-          memory += parseFloat(display.innerHTML);
-          display.innerHTML = '';
+          if( parseFloat(display.innerHTML) < 0 ){
+            display.innerHTML = 'Error';
+          } else {
+            memory += parseFloat(display.innerHTML);
+            display.innerHTML = 'Deposited';
+          }
       } else if ( e.keyCode === 87 ){
           display.innerHTML = memory;
           memory = 0;
