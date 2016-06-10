@@ -4,6 +4,9 @@
   height: 100px;
   text-align: center;
   font-size: 50px;
+  background-color: black;
+  color: white;
+
 }
 
 #numContainer {
@@ -11,6 +14,7 @@
   width: 250px;
   height:180px;
   border-radius: 5px;
+  background-color: rgb(140, 140, 140);
 }
 
 .buhton {
@@ -19,9 +23,11 @@
   width: 30px;
   height: 30px;
   text-align:center;
+  background-color: white;
 }
 #row1{
   float: left;
+  padding-left: 15px;
 }
 #row2{
   float:left;
@@ -36,17 +42,17 @@
   float: left;
 }
 #clear{
-  width:40px;
+  width:70px;
 }
 
 #balance{
-  width:53px;
+  width:70px;
 }
 
 #deposit{
-  width: 53px;
+  width: 70px;
 }
 
 #withdraw{
-  width: 65px;
+  width: 70px;
 }

@@ -37,6 +37,7 @@ window.onload = (function(){
     button_deposit.innerHTML = 'Deposit';
     button_deposit.addEventListener('click', function(){
       memory += parseFloat(display.innerHTML);
+      console.log(typeof memory, memory);
       display.innerHTML = '';
     })
 
@@ -45,7 +46,7 @@ window.onload = (function(){
     button_withdraw.innerHTML = 'Withdraw';
     button_withdraw.addEventListener('click',function(){
       display.innerHTML = memory;
-      memory = '';
+      memory = 0;
     })
 
 
