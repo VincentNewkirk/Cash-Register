@@ -1,0 +1,52 @@
+#regDisplay{
+  border-style: inset;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  font-size: 50px;
+}
+
+#numContainer {
+  border-style: inset;
+  width: 250px;
+  height:180px;
+  border-radius: 5px;
+}
+
+.buhton {
+  border-style: outset;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  text-align:center;
+}
+#row1{
+  float: left;
+}
+#row2{
+  float:left;
+}
+#row3{
+  float:left;
+}
+#row4{
+  float:left;
+}
+#row5{
+  float: left;
+}
+#clear{
+  width:40px;
+}
+
+#balance{
+  width:53px;
+}
+
+#deposit{
+  width: 53px;
+}
+
+#withdraw{
+  width: 65px;
+}
