@@ -1,4 +1,4 @@
-var calculatorModule = (function(){
+function calculatorModule(){
   var total = 0;
   var memory = 0;
 
@@ -12,8 +12,7 @@ var calculatorModule = (function(){
 
 
   function _load(x){
-    validate(x);
-     total = x;
+     total = x
     return total;
     }
 
@@ -27,17 +26,14 @@ var calculatorModule = (function(){
   }
 
   function _subtract(x){
-      validate(x);
       total -= x;
     }
 
   function _multiply(x){
-    validate(x);
     total *= x;
    }
 
   function _divide(x){
-    validate(x);
     total /= x;
    }
 
@@ -64,4 +60,4 @@ var calculatorModule = (function(){
     saveMemory: _changeMemory,
     clearMemory: _clearMemory,
 
-  };})();
+  };}
