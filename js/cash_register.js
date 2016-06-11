@@ -90,13 +90,16 @@ window.onload = (function(){
     window.onkeydown = function(e){
       if( keyCodes[e.keyCode] === undefined ){
         return;
+        //equals key
       } else if( e.keyCode === 187 || e.keyCode === 13 ) {
-          console.log('equals');
           display.innerHTML = eval(display.innerHTML);
+        //clear key
       } else if( e.keyCode === 67 ){
           display.innerHTML = '';
+        //balance key
       } else if( e.keyCode === 66 ){
           display.innerHTML = memory;
+        //deposit key
       } else if ( e.keyCode === 68) {
           if( parseFloat(display.innerHTML) < 0 ){
             display.innerHTML = 'Error';
@@ -104,12 +107,12 @@ window.onload = (function(){
             memory += parseFloat(display.innerHTML);
             display.innerHTML = 'Deposited';
           }
+        //withdraw key
       } else if ( e.keyCode === 87 ){
           display.innerHTML = memory;
           memory = 0;
       } else {
           display.innerHTML += keyCodes[e.keyCode];
-          console.log(e.keyCode);
       }
     }
   });
